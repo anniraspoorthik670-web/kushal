@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title> Time tabbe</title>
+       <style>
+        body{
+            font-family: Arial;
+            text-align: center;
+        }
+        table{
+            width: 80%;
+            margin: 20px;
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 8px solid;
+            padding: 1px;
+            text-align: center;
+        }
+        th{
+            background-color: aqua;
+        }
+        td,tr:nth-child(even){background-color: aliceblue;}
+        .lab{background-color: aquamarine;}
+        .elective{background-color: blanchedalmond;}
+        .break{font-weight: bold;color: antiquewhite;}
+        tfoot{
+            background-color: aquamarine;
+            font-weight: bold;
+        }
+       </style> 
+    </head>
+    <body>
+        <table>
+            <h1>Time Table</h1>
+            <thead>
+                <tr>
+                    <td>Day/Time</td>
+                    <td>9:00am-10:00am</td>
+                    <td>10:00am-11:00am</td>
+                    <td>11:00am-12:00pm</td>
+                    <td>12:00pm-1:00pm</td>
+                    <td>Break</td>
+                    <td>2:00pm-3:00pm</td>
+                    <td>3:00pm-4:00pm</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>Math</td>
+                    <td>English</td>
+                    <td class="Elective">Elective</td>
+                    <td class="lab">pop lab</td>
+                    <td rowspan="5" class="Break">Break</td>
+                    <td>P.E</td>
+                    <td>Science</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>English</td>
+                    <td>social</td>
+                    <td>math</td>
+                    <td class="Elective">Elective</td>
+                    <td>P.E</td>
+                    <td>Science</td>
+                </tr>
+                <tr>
+                    <td>Wedensday</td>
+                    <td>math</td>
+                    <td>social</td>
+                    <td class="lab">pop lab</td>
+                    <td>P.E</td>
+                    <td class="Elective">Elective</td>
+                    <td>Science</td>
+                </tr>
+                <tr>
+                    <td>Thrusday</td>
+                    <td>English</td>
+                    <td>Math</td>
+                    <td>P.E</td>
+                    <td>social</td>
+                    <td class="lab">pop lab</td>
+                    <td>Science</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Math</td>
+                    <td>social</td>
+                    <td class="Elective">Elective</td>
+                    <td>Science</td>
+                    <td>English</td>
+                    <td>P.E</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="8">End of Time Table</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
